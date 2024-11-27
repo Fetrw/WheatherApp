@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based application that provides weather information for various cities. Users can search for cities, view weather details for popular and recently viewed cities, and explore FAQs related to the app.
 
-## Available Scripts
+## Technologies Used
+- React for building the UI.
+- SCSS for styling components.
+- OpenWeatherMap API for fetching weather data.
+- localStorage for persisting recently viewed cities.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+1. **Search Functionality**  
+   - Users can search for cities using the input field in the header.  
+   - Displays a dropdown with matching city names fetched from the OpenWeatherMap API.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Default City Weather**  
+   - Shows weather details for *Odessa* (default city) if no city is selected during the initial app load.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Weather Details**  
+   - Displays detailed weather information such as temperature, conditions, and descriptions.  
+   - Shows minimum and maximum temperatures for the day.  
 
-### `npm test`
+4. **Popular Cities**  
+   - Allows users to quickly view the weather for popular cities like New York, London, Dubai, and Paris.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. **Recently Viewed Cities**  
+   - Displays the last 5 cities viewed by the user, saved using `localStorage`.
 
-### `npm run build`
+6. **Remember Last City**  
+   - The app remembers the last city that was viewed by the user and, upon restarting, it automatically shows the weather for that city. This is achieved by saving the city data in `localStorage`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+7. **FAQ Section**  
+   - Provides answers to common questions about the app's functionality.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **`Header`**  
+  Handles city search and dropdown display for matched results.
 
-### `npm run eject`
+- **`WeatherCard`**  
+  Displays detailed weather information for the selected city.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **`PopularCities`**  
+  Renders a grid of predefined popular cities with clickable cards.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **`RecentCities`**  
+  Lists recently viewed cities with quick navigation options.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **`FAQ`**  
+  An informational section addressing frequently asked questions.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **`Footer`**  
+  Displays application footer content.
 
-## Learn More
+## Data Flow
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Fetching Weather**  
+   - Fetches weather data from the [OpenWeatherMap API](https://openweathermap.org/api) using city IDs.
+   - Updates the `weather` state with the fetched data.  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Storing Recent Cities**  
+   - Maintains a list of recently viewed cities in the `recentCities` state.
+   - Saves the list in `localStorage` to persist data between sessions.
 
-### Code Splitting
+3. **City Search**  
+   - Dynamically fetches matching city names from the OpenWeatherMap API based on the user's search query.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Remember Last City**  
+   - On app load, the last selected city is fetched from `localStorage`. If available, its weather is displayed automatically. If no city has been selected before, the default city (Odessa) is shown.
 
-### Analyzing the Bundle Size
+## Installation and Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the Repository.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd <repository_name>
+   
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+   
+4. Start the application:
+   ```bash
+   npm start
+   ```
+5. Start the application:
+   ```bash
+   http://localhost:3000
+   ```
