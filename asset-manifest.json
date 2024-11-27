@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Fetrw.github.io/WheatherApp/static/css/main.3b838c62.css",
-    "main.js": "/Fetrw.github.io/WheatherApp/static/js/main.1c60bcde.js",
-    "static/media/hero-bg.png": "/Fetrw.github.io/WheatherApp/static/media/hero-bg.539c462060b163379106.png",
-    "static/media/dubai.jpg": "/Fetrw.github.io/WheatherApp/static/media/dubai.38f2f1934e1a22394696.jpg",
-    "static/media/NY.jpg": "/Fetrw.github.io/WheatherApp/static/media/NY.a43e3b84ac65226659ac.jpg",
-    "static/media/london.jpg": "/Fetrw.github.io/WheatherApp/static/media/london.dbe79cf6619085a859a9.jpg",
-    "static/media/paris.jpg": "/Fetrw.github.io/WheatherApp/static/media/paris.26072dffb4e0f1345e06.jpg",
-    "static/media/loupe.svg": "/Fetrw.github.io/WheatherApp/static/media/loupe.d0ca7e6c3d3a304b3d13.svg",
-    "index.html": "/Fetrw.github.io/WheatherApp/index.html",
-    "main.3b838c62.css.map": "/Fetrw.github.io/WheatherApp/static/css/main.3b838c62.css.map",
-    "main.1c60bcde.js.map": "/Fetrw.github.io/WheatherApp/static/js/main.1c60bcde.js.map"
+    "main.css": "/WheatherApp/static/css/main.f5cea993.css",
+    "main.js": "/WheatherApp/static/js/main.36a370c4.js",
+    "static/media/hero-bg.png": "/WheatherApp/static/media/hero-bg.539c462060b163379106.png",
+    "static/media/dubai.jpg": "/WheatherApp/static/media/dubai.38f2f1934e1a22394696.jpg",
+    "static/media/NY.jpg": "/WheatherApp/static/media/NY.a43e3b84ac65226659ac.jpg",
+    "static/media/london.jpg": "/WheatherApp/static/media/london.dbe79cf6619085a859a9.jpg",
+    "static/media/paris.jpg": "/WheatherApp/static/media/paris.26072dffb4e0f1345e06.jpg",
+    "static/media/loupe.svg": "/WheatherApp/static/media/loupe.d0ca7e6c3d3a304b3d13.svg",
+    "index.html": "/WheatherApp/index.html",
+    "main.f5cea993.css.map": "/WheatherApp/static/css/main.f5cea993.css.map",
+    "main.36a370c4.js.map": "/WheatherApp/static/js/main.36a370c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b838c62.css",
-    "static/js/main.1c60bcde.js"
+    "static/css/main.f5cea993.css",
+    "static/js/main.36a370c4.js"
   ]
 }
