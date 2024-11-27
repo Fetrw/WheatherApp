@@ -1,0 +1,82 @@
+@import '../../styles/utils/vars';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+
+  &__search-box {
+    display: flex;
+    align-items: center;
+    background: $white;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px $black-light;
+    width: 600px;
+    max-width: 90%;
+    padding: 5px 10px;
+  }
+
+  &__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    color: $main-text;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: $main-blue;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    .ico {
+      background-image: url("../../assets/images/loupe.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    margin-top: 70px;
+    list-style: none;
+    padding: 0;
+    border-radius: 30px;
+    width: 600px;
+    max-width: 90%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px $black-light;
+    z-index: 1000;
+
+    &-item {
+      padding: 15px 10px 15px;
+      cursor: pointer;
+      font-size: 14px;
+      color: $main-text;
+
+      &:hover {
+        background: $main-blue;
+        border-radius: 30px;
+      }
+    }
+
+    &-item--empty {
+      padding: 10px 15px;
+      font-size: 14px;
+      color: $gray-light;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.app {
+  font-weight: 400;
+
+  &__wrapper {
+    background-image: url("./assets/images/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 20px;
+    text-align: center;
+    height: auto;
+  }
+}
+
+.wrapper > * {
+  margin-bottom: 20px;
+}
+
+.weather-card {
+  margin: 0 auto;
+}
+
+
